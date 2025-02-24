@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    margin: 2rem 0;
+}
+
+body {
+    margin: 1rem;
+    /* overflow: auto; */
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 2px;
+}
+
+li {
+    flex-shrink: 0;
+    height: 30vw;
+    flex-grow: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        /* height: 50vh; */
+        height: auto;
+        width: 100%;
+    }
+}
